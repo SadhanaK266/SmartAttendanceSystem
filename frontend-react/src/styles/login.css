@@ -77,3 +77,22 @@
 
     text-align:center;
 }
+.register-link{
+
+    margin-top:15px;
+
+    text-decoration:none;
+
+    color:#2563eb;
+
+    font-weight:bold;
+
+    display:block;
+
+    text-align:center;
+}
+
+.register-link:hover{
+
+    text-decoration:underline;
+}

@@ -19,3 +19,19 @@ export const loginUser = async (
 
     return response.data;
 };
+
+export const registerUser = async (
+
+    data
+
+) => {
+
+    const response = await API.post(
+
+        "/auth/register",
+
+        data
+    );
+
+    return response.data;
+};

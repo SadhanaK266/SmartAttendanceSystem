@@ -1,22 +1,20 @@
 package com.smartattendance.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-import org.springframework.web.multipart.MultipartFile;
-
 @Getter
 @Setter
+@AllArgsConstructor
 
-public class RegisterRequest {
+public class StudentProfileResponse {
 
     private String name;
 
     private String email;
 
-    private String password;
+    private String profileImageUrl;
 
     private String role;
-
-    private MultipartFile profileImage;
 }

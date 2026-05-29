@@ -21,21 +21,36 @@ public class AuthController {
     @Autowired
     private AuthService authService;
 
-    @PostMapping("/register")
+    @PostMapping(
+            value = "/register",
+            consumes = {
+                    "multipart/form-data"
+            }
+    )
 
     public AuthResponse register(
-            @RequestBody RegisterRequest request
+
+            @ModelAttribute
+            RegisterRequest request
+
     ) {
 
-        return authService.register(request);
+        return authService.register(
+                request
+        );
     }
 
     @PostMapping("/login")
 
     public AuthResponse login(
-            @RequestBody LoginRequest request
+
+            @RequestBody
+            LoginRequest request
+
     ) {
 
-        return authService.login(request);
+        return authService.login(
+                request
+        );
     }
 }

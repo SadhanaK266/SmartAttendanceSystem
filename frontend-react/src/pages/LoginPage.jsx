@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import {
 
     useState,
@@ -131,6 +133,14 @@ function LoginPage() {
                     Login
 
                 </button>
+                <Link
+                    to="/register"
+                    className="register-link"
+                >
+
+                    Create Account
+
+                </Link>
 
                 {
 

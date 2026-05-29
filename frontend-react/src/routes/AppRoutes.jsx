@@ -8,6 +8,8 @@ import {
 
 import LoginPage from "../pages/LoginPage";
 
+import RegisterPage from "../pages/RegisterPage";
+
 import TeacherDashboard from "../pages/TeacherDashboard";
 
 import StudentDashboard from "../pages/StudentDashboard";
@@ -21,23 +23,22 @@ function AppRoutes() {
             <Routes>
 
                 <Route
-
                     path="/"
-
                     element={<LoginPage />}
                 />
 
                 <Route
+                    path="/register"
+                    element={<RegisterPage />}
+                />
 
+                <Route
                     path="/teacher"
-
                     element={<TeacherDashboard />}
                 />
 
                 <Route
-
                     path="/student"
-
                     element={<StudentDashboard />}
                 />
 
